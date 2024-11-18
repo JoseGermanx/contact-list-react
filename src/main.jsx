@@ -6,7 +6,9 @@ import Layout from "./App.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ContactProvider>
+      
       <Layout />
+
     </ContactProvider>
   </StrictMode>
 );

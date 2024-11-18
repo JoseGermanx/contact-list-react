@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 
-const ContactContext = createContext(null);
+export const ContactContext = createContext(null);
 
 // patron flux
 const ContactReducer = (state, action) => {
@@ -18,6 +18,8 @@ const ContactReducer = (state, action) => {
 // eslint-disable-next-line react/prop-types
 export function ContactProvider({ children }) {
   const [contact, contactActions] = useReducer(ContactReducer, []);
+  
+
   return (
     <ContactContext.Provider value={{ contact, contactActions }}>
       {children}

@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 const NavBar = () => {
 
   const navigate = useNavigate()
+  
   return (
     <>
       <nav className="navbar navbar-light bg-light">
